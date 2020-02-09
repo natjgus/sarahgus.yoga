@@ -1,0 +1,400 @@
+/****
+Custom Style Sheet
+****/
+
+/****
+Global Styles
+****/
+html, body {
+	 overflow-x: hidden;
+ }
+
+body{
+	font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+}
+
+
+.intro-text{
+	font-size: 2.5em;
+	color: darkviolet;
+	text-shadow: 2px 2px rgba(232, 199, 93, 0.75);
+}
+
+@media only screen and (min-width: 1500px){
+	body{
+		font-size: 1.5rem;
+	}
+	h2, h5, h6{
+		font-size: 1.75rem;
+	}
+	.modal-dialog{
+		max-width: 800px;
+	}
+	.modal-content p{
+		font-size: 1.25rem;
+	}
+
+	.testmonial{
+		min-height: 700px;
+	}
+	.carousel{
+		min-height: 500px;
+	}
+	.intro-text{
+	    font-size: 4.5rem;
+	}
+}
+
+
+.container{
+	padding-top: 2em !important;
+	padding-bottom: 2em !important;
+}
+
+.jumbotron{
+	padding: 0px 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.padding{
+	padding-left: 2em;
+	padding-right:2em;
+}
+
+.blue{
+	background-color: rgba(161, 190, 217, 0.75);
+}
+
+.yellow{
+	background-color: rgba(232, 199, 93, 0.75);
+}
+
+
+.btn-primary{
+	border-color: darkviolet;
+}
+.btn-primary:hover{
+	background-color: rgba(161, 190, 217, 0.75);
+}
+
+/* Modal CSS */
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  @media(max-width: 768px) {
+    min-height: calc(100vh - 20px);
+  }
+}
+
+.modal-image img{
+	height: 100px;
+	widows: auto;
+	border-radius: 50%;
+}
+
+
+/****
+Header
+****/
+
+.navbar{
+	background-color: rgba(161, 190, 217, 0.75);
+}
+
+.navbar-brand{
+	display: block !important;
+}
+.navbar-brand img{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 650px){
+	.navbar{
+		flex-direction: column;
+	}
+	.navbar-brand{
+		padding-left: 15px;
+	}
+
+	.intro-text{
+		font-size: 2em;
+	}
+
+	.main-image{
+		background-position:20% !important;
+	}
+}
+
+@media only screen and (min-width: 651px){
+
+	@keyframes blink { 50% { border-color: rgba(232, 199, 93, 0.75); }  }
+	#logo {
+		border: solid 2px rgba(232, 199, 93, 0.75);
+		animation: blink 1s step-end infinite alternate;
+		-webkit-transition: margin 0.5s ease-out;
+		-moz-transition: margin 0.5s ease-out;
+		-o-transition: margin 0.5s ease-out;
+	}
+
+	.intro-text {
+		font-size: 4em;
+	}
+
+}
+
+/****
+Landing
+****/
+
+.main-image{
+	background: url("../images/yogaBlueTopBanner.jpg");
+	background-size: cover;
+	height: 100vh;
+	display: flex !important;
+	justify-content: center;
+}
+
+
+
+
+/****
+About Section
+****/
+
+.headshot{
+	max-width: 90%;
+	border-radius: 75%;
+	padding: 3px;
+	border: 4px solid rgb(100, 145, 227);
+}
+
+/****
+Private Class
+****/
+.row{
+	min-height: 500px;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 766px){
+	 .my-auto-text{
+		padding-top: 1.5em !important;
+		padding-bottom: 1.5em !important;
+	}
+}
+
+.img-fluid{
+	margin: 0 auto;
+}
+
+.ul-title{
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+#publicClasses .padding{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#privateClass .padding{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/******
+calendar
+*******/
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/****
+Contact Form
+****/
+
+#mailer-form{
+	border:1px solid #cecece;
+}
+
+/****
+Footer
+****/
+
+footer{
+	background-color: rgba(161, 190, 217, 0.75);
+	color: rgb(94, 102, 112);
+}
+
+footer a{
+	color: white;
+}
+
+footer a:hover{
+	color: rgba(232, 199, 93, 0.75);
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+#footerText {
+	padding-top: 50px;
+}
+
+
+/***** Testimonial Slider *******/
+
+.testimonial{
+	max-width: 1500px;
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+	min-height: 140px;
+}
+
+@media only screen and (max-width: 575px){
+.carousel .testimonial {
+	min-height: 280px;
+}
+}
+.carousel .overview {
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {
+	background: #555;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/***** Responsive Calendar *******/
+.responsiveCal {
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+}
+
+.responsiveCal iframe {
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+}
+
+
+/***** Parallax Settings *********/
+
+.parallax{
+
+background-image:
+	 linear-gradient(
+		 rgba(161, 190, 217, 0.75),
+		 rgba(161, 190, 217, 0.75)
+	 ),
+	 /* your image */
+	 url('../images/tracyIzzySun.jpg');
+
+/* Full height */
+height: 250px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.parallax2{
+
+background-image:
+	 linear-gradient(
+		 rgba(161, 190, 217, 0.75),
+		 rgba(161, 190, 217, 0.75)
+	 ),
+	 /* your image */
+	 url('../images/pogo-on-dock.jpg');
+
+/* Full height */
+height: 250px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
