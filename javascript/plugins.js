@@ -1,7 +1,5 @@
 
 // Trigger Modal Pop Up on Page Load
-
-
 $(document).ready(function(){
 $("#myModal").modal('show');
 });
