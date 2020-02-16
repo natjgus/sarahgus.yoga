@@ -69,7 +69,7 @@ $(document).ready(function(){
 			$("#contact-form").ajaxSubmit({
 				type: "POST",
 				url: $("#contact-form").attr("action"),
-				debugger;
+				
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
 					$("#output-area").css("display", "");
