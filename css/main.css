@@ -241,6 +241,10 @@ Contact Form
 	border:1px solid #cecece;
 }
 
+.hidden {
+	display: none;
+}
+
 /****
 Footer
 ****/
