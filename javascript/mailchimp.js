@@ -14,11 +14,12 @@ function register($form) {
     type: $form.attr('method'),
     url: $form.attr('action'),
     data: $form.serialize(),
+    dataType: "jsonp",
+    jsonp: "c", // trigger MailChimp to return a JSONP response
+    contentType: "application/json; charset=utf-8",
     cache: false,
-    dataType: 'json',
-    contentType: 'application/json; charset=utf-8',
     error: function (err) { 
-      $('#subscribe-result').css('color', '#f5c6cb')
+      $('#subscribe-result').css('color', '#721c24')
       $('#subscribe-result').html('<p>Something went wrong. Please try again later.</p>')
     },
     success: function (data) {
@@ -33,7 +34,7 @@ function register($form) {
         // Something went wrong, do something to notify the user.
         $('#mce-EMAIL').css('borderColor', '#ff8282')
         $('#subscribe-result').css('color', '#ff8282')
-        $('#subscribe-result').html('<p>' + data.msg.substring(4) + '</p>')
+        $('#subscribe-result').html('<p>Something went wrong. Please try again later.</p>')
       }
     }
   })
