@@ -24,6 +24,7 @@ function register($form) {
     },
     success: function (data) {
       $('#mc-embedded-subscribe').val('subscribe')
+      debugger;
       if (data.result === 'success') {
         // Yeahhhh Success
         $('#mce-EMAIL').css('borderColor', '#ffffff')
@@ -34,7 +35,7 @@ function register($form) {
         // Something went wrong, do something to notify the user.
         $('#mce-EMAIL').css('borderColor', '#ff8282')
         $('#subscribe-result').css('color', '#ff8282')
-        $('#subscribe-result').html('<p>Something went wrong. Please try again later.</p>')
+        $('#subscribe-result').html('<p>Something went wrong. Please try again later.</p>ga')
       }
     }
   })
