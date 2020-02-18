@@ -80,6 +80,7 @@ a {
 }
 .btn-primary:hover{
 	background-color: rgba(161, 190, 217, 0.75);
+	border-color: darkviolet;
 }
 
 /* Modal CSS */

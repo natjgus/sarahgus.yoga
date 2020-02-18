@@ -33,8 +33,8 @@
 
 	<!-- Your JavaScript Form Validator and logo animation -->
 	<script src="javascript/jquery-validate.js"></script>
+	<script src="javascript/mailchimp.js"></script>
 	<script src="javascript/plugins.js"></script>
-	<script src="javascript/mailer.js"></script>
 
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -266,7 +266,7 @@
 									</div>
 									<h3 class="text-center">Subscribe to the list!</h3>
 									<div id="wrapper" class="text-center">
-										<form id="signup" class="formee" action="php/subscribe.php" method="post">
+										<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="https://yoga.us19.list-manage.com/subscribe/post?u=549cfeee0a70f182bcc5dd30f&amp;id=8eefea6f9c" method="get">
 												<fieldset>
 														<div class="form-group my-auto p-1">
 																<label for="fname">First Name:</label> <input name="fname" id="fname" type="text" />
@@ -278,9 +278,11 @@
 																<label for="email">Email Address:</label> <input name="email" id="email-subscribe" type="text" />
 														</div>
 														<div class="text-center">
-																<button type="submit" class="btn btn-primary yellow text-dark">Send Away and Namaste</button>
+																<button type="submit" id="mc-embedded-subscribe" class="btn btn-primary yellow text-dark">Send Away and Namaste</button>
 														</div>
 												</fieldset>
+											<div id="subscribe-result">
+											</div>
 										</form>
 										<div id="response"></div>
 									</div>
