@@ -32,6 +32,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 	<!-- Your JavaScript Form Validator and logo animation -->
+	<script src="javascript/jquery-validate.js"></script>
 	<script src="javascript/plugins.js"></script>
 	<script src="javascript/mailer.js"></script>
 
@@ -289,8 +290,14 @@
 			</div>
 			</div>
 			<div class="container">
+				<div class="alert alert-success alert-dismissible fade" role="alert" id="buttonAlert">
+					<p>Your message was sent successfully!</p>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 				<h2>Send Sarah a Note!</h2>
-				<form id="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/#aboutSarah">
+				<form id="contact-form" method="POST" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="/#contact-form">
 
 					<!-- Name input -->
 					<div class="form-group ">
@@ -314,8 +321,7 @@
 					<!-- Message input -->
 					<div class="form-group ">
 							<label for="message">Message</label>
-							<textarea class="form-control" id="message" name="message" placeholder="Type message here!"
-										 rows="5"></textarea>
+							<textarea class="form-control" id="message" name="message" placeholder="Type message here!" rows="5"></textarea>
 					</div>
 
 					<!-- HoneyPot input -->
