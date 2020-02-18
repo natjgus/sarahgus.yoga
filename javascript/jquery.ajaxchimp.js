@@ -64,7 +64,7 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                 var msg;
                 function successCallback(resp) {
                     if (resp.result === 'success') {
-                        msg = 'We have sent you a confirmation email';
+                        msg = 'Success! You are now subscribed!';
                         label.removeClass('error').addClass('valid');
                         email.removeClass('error').addClass('valid');
                     } else {
