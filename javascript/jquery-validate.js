@@ -72,14 +72,14 @@ $(document).ready(function(){
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
 					$("#output-area").css("display", "");
-					debugger;
-					// write the server's reply to the output area
-					$("#output-area").html(ajaxOutput);
+
+					// display success
+					$("#formAlert").addClass('show');
+					setTimeout(function() {
+					$("#formAlert").removeClass('show')}, 2000);
 
 					// reset the form if it was successful
-					if($(".alert-success").length >= 1) {
-						$("#contact-form")[0].reset();
-					}
+					$("#contact-form")[0].reset();
 				}
 			})
 		}
