@@ -1,14 +1,14 @@
 
-$("#contact-form").submit(function(e) {
-    e.preventDefault();
+// $("#contact-form").submit(function(e) {
+//     e.preventDefault();
   
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-        $("#formAlert").addClass('show');
-        setTimeout(function() {
-          $("#formAlert").removeClass('show')}, 2000);
-        });
-  });
+//     var $form = $(this);
+//     $.post($form.attr("action"), $form.serialize()).then(function() {
+//         $("#formAlert").addClass('show');
+//         setTimeout(function() {
+//           $("#formAlert").removeClass('show')}, 2000);
+//         });
+//   });
 
 // $(document).ready(function() {
 //     // jQuery Validation

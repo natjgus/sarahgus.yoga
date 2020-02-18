@@ -64,25 +64,25 @@ $(document).ready(function(){
 		},
 
 		// AJAX submit the form data to back end if rules pass
-		// submitHandler: function(form) {
-		// 	$("#contact-form").ajaxSubmit({
-		// 		type: "POST",
-		// 		url: $("#contact-form").attr("action"),
+		submitHandler: function(form) {
+			$("#contact-form").ajaxSubmit({
+				type: "POST",
+				url: $("#contact-form").attr("action"),
 
-		// 		success: function(ajaxOutput) {
-		// 			// clear the output area's formatting
-		// 			$("#output-area").css("display", "");
+				success: function(ajaxOutput) {
+					// clear the output area's formatting
+					$("#output-area").css("display", "");
+					debugger;
+					// write the server's reply to the output area
+					$("#output-area").html(ajaxOutput);
 
-		// 			// write the server's reply to the output area
-		// 			$("#output-area").html(ajaxOutput);
-
-		// 			// reset the form if it was successful
-		// 			if($(".alert-success").length >= 1) {
-		// 				$("#contact-form")[0].reset();
-		// 			}
-		// 		}
-		// 	})
-		// }
+					// reset the form if it was successful
+					if($(".alert-success").length >= 1) {
+						$("#contact-form")[0].reset();
+					}
+				}
+			})
+		}
 	});/* end validate function here */
 
 });/*end document.ready()*/
