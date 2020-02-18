@@ -33,8 +33,9 @@
 
 	<!-- Your JavaScript Form Validator and logo animation -->
 	<script src="javascript/jquery-validate.js"></script>
-	<script src="javascript/mailchimp.js"></script>
+	<script src="javascript/jquery.ajaxchimp.js"></script>
 	<script src="javascript/plugins.js"></script>
+
 
 	<!-- Google reCAPTCHA -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -266,16 +267,16 @@
 									</div>
 									<h3 class="text-center">Subscribe to the list!</h3>
 									<div id="wrapper" class="text-center">
-										<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" action="https://yoga.us19.list-manage.com/subscribe/post-json?u=549cfeee0a70f182bcc5dd30f&amp;id=8eefea6f9c" method="get">
+										<form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
 												<fieldset>
 														<div class="form-group my-auto p-1">
-																<label for="fname">First Name:</label> <input name="fname" id="fname" type="text" />
+																<label for="fname">First Name:</label> <input name="FNAME" id="fname" type="text" />
 														</div>
 														<div class="form-group my-auto p-1">
-																<label for="lname">Last Name:</label> <input name="lname" id="lname" type="text" />
+																<label for="lname">Last Name:</label> <input name="LNAME" id="lname" type="text" />
 														</div>
 														<div class="form-group my-auto p-1">
-																<label for="email">Email Address:</label> <input name="email" id="email-subscribe" type="text" />
+																<label for="mc-email">Email Address:</label> <input name="EMAIL" id="mc-email" type="email" />
 														</div>
 														<div class="text-center">
 																<button type="submit" id="mc-embedded-subscribe" class="btn btn-primary yellow text-dark">Send Away and Namaste</button>
@@ -351,5 +352,6 @@
       </div>
 		</footer>
 		<script src="javascript/jquery.js"></script>
+		<script src="javascript/mailchimp.js"></script>
   </body>
 </html>
