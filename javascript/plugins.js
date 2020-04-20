@@ -1,8 +1,8 @@
 
 // Trigger Modal Pop Up on Page Load
-// $(document).ready(function(){
-// $("#myModal").modal('show');
-// });
+$(document).ready(function(){
+$("#myModal").modal('show');
+});
 
 // Sticky Nav + smooth scrolling
 // Originally written by Eric Hasseltine of Choppingblock.com
