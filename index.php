@@ -215,7 +215,7 @@
 			<section class="jumbotron blue">
 					<div class="row" id="privateClass">
 						<div class="col-md-6 my-auto my-auto-text padding">
-							<h2>Private Sessions @ $50/hour</h2>
+							<h2>Private Sessions @ $60/hour</h2>
 							<p>Sarah seeks to improve the overall health and well-being of her clients by offering personalized sessions that are integrative, educational, and rejuvenating. She often collaborates with local physical therapists and other body workers to facilitate patient recovery.</p>
 							<p class="ul-title">Unlike public classes, private sessions allow you to tailor your practice to your:</p>
 							<ul>
